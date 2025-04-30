@@ -407,4 +407,56 @@ footer p {
         width: 150px;
         height: 150px;
     }
+}
+
+/* CERTIFICATES と OTHERS セクション用のカードスタイル */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.info-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.info-content p {
+    margin-bottom: 10px;
+}
+
+.info-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    margin-top: auto;
+}
+
+.info-content a:hover {
+    text-decoration: underline;
 } 
