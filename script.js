@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             // セクションの位置情報
             const sectionTop = section.getBoundingClientRect().top;
-            const triggerPosition = window.innerHeight * 0.8; // 画面の80%位置でトリガー
+            const windowHeight = window.innerHeight;
             
             // セクションが表示位置に来たら.activeクラスを追加
-            if (sectionTop < triggerPosition) {
+            if (sectionTop < windowHeight * 0.75) {
                 section.classList.add('active');
             }
         });
@@ -38,5 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    });
+
+    // ヘッダーのスクロール制御
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+    const headerHeight = header.offsetHeight;
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // 下にスクロールしているときはヘッダーを隠す
+        if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+            header.style.transform = 'translateY(-100%)';
+        } 
+        // 上にスクロールしているときはヘッダーを表示
+        else {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollTop = scrollTop;
     });
 }); 
