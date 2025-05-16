@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shion Fukuhata</title>
+    <title>福畠汐音 (Shion Fukuhata) | 自然言語処理研究者</title>
+    <meta name="description" content="福畠汐音(Shion Fukuhata)のプロフィールページです。自然言語処理（NLP）を専門とする静岡大学大学院生の研究成果、スキル、プロジェクト実績などをご紹介しています。">
+    <meta name="keywords" content="福畠汐音, Shion Fukuhata, 自然言語処理, NLP, 静岡大学, 狩野研究室, 研究者, STaMP, BERT">
+    <link rel="canonical" href="https://maxel31.github.io/profile_page/">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="福畠汐音 (Shion Fukuhata) | 自然言語処理研究者">
+    <meta property="og:description" content="福畠汐音(Shion Fukuhata)のプロフィールページです。自然言語処理（NLP）を専門とする静岡大学大学院生の研究成果、スキル、プロジェクト実績などをご紹介しています。">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://maxel31.github.io/profile_page/">
+    <meta property="og:image" content="./images/profile.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="福畠汐音 (Shion Fukuhata) | 自然言語処理研究者">
+    <meta name="twitter:description" content="福畠汐音(Shion Fukuhata)のプロフィールページです。自然言語処理（NLP）を専門とする静岡大学大学院生の研究成果、スキル、プロジェクト実績などをご紹介しています。">
+    <meta name="twitter:image" content="./images/profile.jpg">
+    
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "福畠汐音",
+      "alternateName": "Shion Fukuhata",
+      "url": "https://maxel31.github.io/profile_page/",
+      "image": "./images/profile.jpg",
+      "jobTitle": "大学院生、研究者",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "静岡大学大学院 狩野研究室"
+      },
+      "description": "自然言語処理（NLP）を専門とする研究者",
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "静岡大学大学院 総合科学技術研究科 情報学専攻"
+      },
+      "knowsAbout": ["自然言語処理", "NLP", "BERT", "SNSユーザの属性推定", "言語モデルの冗長性"]
+    }
+    </script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="メインナビゲーション">
             <ul>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#work">WORK EXPERIENCE</a></li>
-                <li><a href="#publications">PUBLICATIONS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#certificates">CERTIFICATES</a></li>
-                <li><a href="#others">OTHERS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about" title="福畠汐音について">ABOUT ME</a></li>
+                <li><a href="#work" title="職務経歴">WORK EXPERIENCE</a></li>
+                <li><a href="#publications" title="研究論文一覧">PUBLICATIONS</a></li>
+                <li><a href="#projects" title="プロジェクト実績">PROJECTS</a></li>
+                <li><a href="#certificates" title="取得資格">CERTIFICATES</a></li>
+                <li><a href="#others" title="その他の実績">OTHERS</a></li>
+                <li><a href="#contact" title="連絡先">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -26,9 +66,9 @@
         <section class="hero">
             <div class="container">
                 <div class="profile-image">
-                    <img src="./images/profile.jpg" alt="福畠 汐音のプロフィール画像">
+                    <img src="./images/profile.jpg" alt="福畠汐音のプロフィール画像">
                 </div>
-                <h1>Shion Fukuhata</h1>
+                <h1>福畠 汐音 (Shion Fukuhata)</h1>
                 <h3>Welcome👋</h3>
                 <p>専門は自然言語処理（<strong>NLP</strong>）で、狩野研究室に所属しています。</p>
                 <div class="social-links">
@@ -71,7 +111,7 @@
                 <div class="publication-grid">
                     <div class="publication-card">
                         <div class="publication-image">
-                            <img src="./images/arxiv-paper.png" alt="BERT論文イメージ">
+                            <img src="./images/arxiv-paper.png" alt="BERT冗長性に関する研究論文「Few Dimensions are Enough」のサムネイル画像">
                         </div>
                         <div class="publication-content">
                             <h4>Few Dimensions are Enough: Fine-tuning BERT with Selected Dimensions Revealed Its Redundant Nature (2025)</h4>
@@ -82,7 +122,7 @@
 
                     <div class="publication-card">
                         <div class="publication-image">
-                            <img src="./images/nlp31-paper.png" alt="NLP論文イメージ">
+                            <img src="./images/nlp31-paper.png" alt="BERTモデル冗長性の解明に関する言語処理学会論文のサムネイル画像">
                         </div>
                         <div class="publication-content">
                             <h4>トークン・次元・層の3つの観点とクロスファインチューンによるBERTモデル冗長性の解明 (2025)</h4>
@@ -93,7 +133,7 @@
 
                     <div class="publication-card">
                         <div class="publication-image">
-                            <img src="./images/nlp30-paper.png" alt="STaMP論文イメージ">
+                            <img src="./images/nlp30-paper.png" alt="STaMP: 個人特性予測に関する言語処理学会論文のサムネイル画像">
                         </div>
                         <div class="publication-content">
                             <h4>STaMP: 個人の性格や政治的立場等の多面的特性と紐づくSNS データの構築及び文章スタイルによる個人特性予測 (2024)</h4>
@@ -111,7 +151,7 @@
                 <div class="project-grid">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./images/emochare.png" alt="エモちゃれプロジェクト">
+                            <img src="./images/emochare.png" alt="エモちゃれ～You Are My Corn!～ プロジェクトのスクリーンショット画像">
                         </div>
                         <div class="project-content">
                             <h4>エモちゃれ～You Are My Corn!～ (2023)</h4>
@@ -168,8 +208,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Shoin Fukuhata All rights reserved</p>
+            <p>&copy; 2025 福畠 汐音 (Shion Fukuhata) All rights reserved</p>
             <p>Made with ❤ and GitHub Pages</p>
+            <p><a href="sitemap.xml" title="サイトマップ">Sitemap</a></p>
         </div>
     </footer>
 

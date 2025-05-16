@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maxel31.github.io/profile_page/sitemap.xml 
